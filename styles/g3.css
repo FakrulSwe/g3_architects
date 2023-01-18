@@ -71,7 +71,7 @@ header #btn {
 }
 
 .img {
-    width: 1200px;
+    width: 1100px;
     border-radius: 8px;
     margin-bottom: 50px;
 }
@@ -122,14 +122,15 @@ header #btn {
 
 /* Section Love & Enjoy */
 
- .love-section {
+.love-section {
     display: flex;
     justify-content: space-between;
     gap: 55px;
-    margin: 60px 60px;
+    margin: 75px 75px;
 }
-.love-pic{
-    position:relative;
+
+.love-pic {
+    position: relative;
 
 }
 
@@ -146,12 +147,18 @@ header #btn {
     margin-bottom: 30px;
 }
 
+.feature-title {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 .feature {
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     margin-bottom: 20px;
-    padding: 35px;
+    padding: 25px;
 }
 
 .experience {
@@ -161,7 +168,207 @@ header #btn {
     text-align: center;
     padding: 35px 32px;
     position: absolute;
-    bottom: -40px;
-    left: -40px;
+    bottom: -25px;
+    left: -25px;
     border-radius: 8px;
+}
+
+/* Some Facts Style */
+
+.facts-title {
+    font-family: 'Work Sans';
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding: 130px 655px 20px 100px;
+}
+
+.facts-description {
+    color: #727272;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 700px 20px 100px;
+}
+
+.work {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 150px;
+    padding: 25px 0;
+    /* height: 200px; */
+    text-align: center;
+    /* transform: rotate(90deg); */
+    transition: transform 3s case-out 0.3s;
+}
+
+.work:hover {
+    background-color: rgb(216, 189, 176);
+    border: 1px solid rgb(13, 13, 14);
+}
+
+.work:hover img {
+    transform: rotate(180deg)
+}
+
+.facts-work {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 170px;
+}
+
+.work h2 {
+    color: #424242;
+    margin: 10px 0 5px 0;
+}
+
+/* Sponsor styles */
+
+.sponsor-title {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Work Sans';
+    margin: 150px 0 20px 0;
+}
+
+.sponsor-status {
+    text-align: center;
+    color: #727272;
+    font-size: 16px;
+    font-family: 'Work Sans';
+    margin: 3px 0 20px 0;
+}
+
+.sponsor-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 120px 80px;
+    transition: transform 3s case-out 0.3s;
+}
+
+.sponsor-icon:hover img {
+    transform: rotate(180deg)
+}
+
+.sponsor-icon {
+    mix-blend-mode: luminosity;
+}
+
+.footer {
+    text-align: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin: 0 120px;
+    padding: 25px 200px;
+}
+
+/* --------------
+Screen Responsive
+---------- -----*/
+
+@media only screen and (max-width:576px) {
+    .header {
+        background-color: rgba(255, 144, 14, 0.1);
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 30px 20px
+    }
+
+    nav ul {
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .banner-description {
+        margin: 20px;
+        text-align: left;
+    }
+
+    .header #btn {
+        margin: 32px 0 0;
+    }
+
+    .banner-img {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    /* quick-list */
+    .quick-list {
+        flex-direction: column-reverse;
+        margin: 0 15px;
+    }
+
+    .quick-list-photos {
+        margin: 0 auto;
+        grid-template-columns: min-content;
+    }
+
+    .quick-list-status {
+        padding-top: 50px;
+    }
+
+    /* Love section */
+    .love-section {
+        flex-direction: column;
+        margin: 25px 20px;
+    }
+
+    .love-pic {
+        display: grid;
+        justify-content: center;
+        width: 150px;
+    }
+
+    /* Some Facts */
+    .facts-title {
+        padding: 50px 0 20px 20px;
+    }
+
+    .facts-description {
+        padding: 0 20px 20px 20px;
+    }
+    .facts-work{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 25px;
+    }
+    /* Sponsor */
+    .sponsor-title{
+        margin: 50px 20px 0;
+    }
+    .sponsor-status{
+        margin: 25px 20px;
+    }
+    .sponsor-icons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 15px;
+        gap: 5px;
+    }
+    /* Footer */
+    .footer{
+        margin: 50px 30px 10px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992) {}
+
+#hide {
+    display: none;
 }
